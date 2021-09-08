@@ -1,0 +1,108 @@
+Dlr: 0.0001
+Glr: 0.0001
+analogy_scale: 1
+attr: happy@angry@sad@contemptuous@disgusted@neutral@fearful@surprised
+attr_names:
+- happy
+- angry
+- sad
+- contemptuous
+- disgusted
+- neutral
+- fearful
+- surprised
+aug_param:
+  crop_param:
+    size:
+    - 512
+    - 512
+  resize_param:
+    ratio_h:
+    - 0.6
+    - 1.2
+    ratio_w:
+    - 0.6
+    - 1.2
+    version: v2
+  rotation_param:
+    degrees:
+    - -10
+    - 10
+  shift_param:
+    bias:
+    - 50
+    - 50
+basemodel: rafd
+basemodel_version: v4
+batch_size: 24
+cls_type: CE
+continue_train: false
+csv_path: info/Rafd_image.csv
+disc_type: multiScale
+discrim:
+  image_size: 128
+  n_scale: 3
+  norm: none
+  repeat_num: 6
+dst_attr: neutral
+dst_aug: true
+dst_aug_param:
+  color_param:
+    brightness: 0.5
+    contrast: 0.5
+    hue: 0.2
+    saturation: 0
+  crop_param:
+    size:
+    - 160
+    - 160
+  resize_param:
+    ratio_h:
+    - 0.8
+    - 1.2
+    ratio_w:
+    - 0.8
+    - 1.2
+    version: v2
+  rotation_param:
+    degrees:
+    - -10
+    - 10
+  shift_param:
+    bias:
+    - 10
+    - 10
+dst_crop_size: 160
+dst_dir: datasets/joint_dataset/train
+epoch: 5000
+framework_config:
+  n_save_img: 100
+  num_workers: 8
+g_type: adain_v2
+ganloss: LSGANLoss_multiScale
+generator:
+  act_type: lrelu
+  c_dim: 0
+  condition: true
+  conv_dim: 128
+  n_down: 1
+  repeat_num: 4
+lam_cls: 10
+lam_recon: 10
+lam_recon_per: 1
+lam_vgg: 10
+lam_gan: 1
+n_dis: 1
+optimizer: basic
+recon_type: BAGB
+save_dir: checkpoints/expression_manipulation
+src_aug: true
+src_crop_size:
+- 512
+- 512
+src_data_dir: datasets/rafd
+src_train_list: info/expression_manipulation.txt
+vgg_layers:
+- 0
+- 1
+- 2
