@@ -1,6 +1,6 @@
 # Domain Adaptive Image-to-image Translation
 
-This is a pytorch project for the paper [**Domain Adaptive Image-to-image Translation**] by Ying-Cong Chen, Xiaogang Xu, and Jiaya Jia presented at **CVPR2020**.
+This is a pytorch project for the paper **Domain Adaptive Image-to-image Translation** by Ying-Cong Chen, Xiaogang Xu, and Jiaya Jia presented at **CVPR2020**.
 
 ## Introduction
 Unpaired image-to-image translation (I2I) has achieved great success in various applications. However, its generalization capacity is still an open question.
@@ -27,7 +27,7 @@ Our framework introduces two sub-modules – one maps testing samples to the val
 Download datasets from [google pan](https://drive.google.com/file/d/1zQ3EGO7O01xMKcMZQKtMLQm096ApJ7MF/view?usp=sharing) and place them under the "datasets"
 
 
-## I2I Models
+### I2I Models
 
 In the experiments, we use the stargan model for cross-domain expression manipulation, and CR-GAN model for cross-domain novel view synthesis.
 These models can be downloaded from [google pan](https://drive.google.com/file/d/1zQ3EGO7O01xMKcMZQKtMLQm096ApJ7MF/view?usp=sharing).
