@@ -30,7 +30,7 @@ Download datasets from [google pan](https://drive.google.com/file/d/1zQ3EGO7O01x
 ### I2I Models
 
 In the experiments, we use the stargan model for cross-domain expression manipulation, and CR-GAN model for cross-domain novel view synthesis.
-These models can be downloaded from [google pan](https://drive.google.com/file/d/1zQ3EGO7O01xMKcMZQKtMLQm096ApJ7MF/view?usp=sharing).
+These models can be downloaded from [google pan](https://drive.google.com/file/d/1dtUN26fcnEY2ahohxrQ86SsYXdV-OAAL/view?usp=sharing).
 
 ### Application: Cross-domain Expression Manipulation
 
