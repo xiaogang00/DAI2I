@@ -30,7 +30,8 @@ Download datasets from [google pan](https://drive.google.com/file/d/1zQ3EGO7O01x
 ### I2I Models
 
 In the experiments, we use the stargan model for cross-domain expression manipulation.
-The models can be downloaded from [google pan](https://drive.google.com/file/d/1dtUN26fcnEY2ahohxrQ86SsYXdV-OAAL/view?usp=sharing).
+The models can be downloaded from [google pan](https://drive.google.com/file/d/1dtUN26fcnEY2ahohxrQ86SsYXdV-OAAL/view?usp=sharing). 
+And place them under the "I2I_model".
 
 ### Application: Cross-domain Expression Manipulation
 
