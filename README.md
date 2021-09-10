@@ -29,22 +29,14 @@ Download datasets from [google pan](https://drive.google.com/file/d/1zQ3EGO7O01x
 
 ### I2I Models
 
-In the experiments, we use the stargan model for cross-domain expression manipulation, and CR-GAN model for cross-domain novel view synthesis.
-These models can be downloaded from [google pan](https://drive.google.com/file/d/1dtUN26fcnEY2ahohxrQ86SsYXdV-OAAL/view?usp=sharing).
+In the experiments, we use the stargan model for cross-domain expression manipulation.
+The models can be downloaded from [google pan](https://drive.google.com/file/d/1dtUN26fcnEY2ahohxrQ86SsYXdV-OAAL/view?usp=sharing).
 
 ### Application: Cross-domain Expression Manipulation
 
 ```
 python run_expression_manipulation.py --config_path config/expression_manipulation/options.yaml --save_dir checkpoints/expression_manipulation -gpu 0,1,2,3
 ```
-
-
-### Application: Cross-Domain Novel View Synthesis
-
-```
-python run_view_synthesis.py --config_path config/view_synthesis/options.yaml --save_dir checkpoints/view_synthesis -gpu 0,1
-```
-
 
 ## Test
 
@@ -53,14 +45,6 @@ python run_view_synthesis.py --config_path config/view_synthesis/options.yaml --
 
 ```
 python test_expression_manipulation.py test --save_dir results --data_dir datasets/joint_dataset/test --model_path checkpoints/expression_manipulation
-```
-
-
-### Application: Cross-Domain Novel View Synthesis
-
-```
-python test_view_synthesis.py test --save_dir results/sketch --data_dir datasets/sketch_dataset/test --model_path checkpoints/view_synthesis
-python test_view_synthesis.py test --save_dir results/painting --data_dir datasets/painting_dataset/test --model_path checkpoints/view_synthesis
 ```
 
 
