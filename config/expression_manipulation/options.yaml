@@ -74,7 +74,7 @@ dst_aug_param:
     - 10
 dst_crop_size: 160
 dst_dir: datasets/joint_dataset/train
-epoch: 5000
+epoch: 600
 framework_config:
   n_save_img: 100
   num_workers: 8
